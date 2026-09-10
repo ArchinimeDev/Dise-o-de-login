@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso | Mi Aplicación</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+    <!-- ═══════════════════════════════════════════
+         FORMULARIO: INICIAR SESIÓN
+    ════════════════════════════════════════════ -->
+    <div class="form-box login">
+        <form id="loginForm" novalidate>
+            <header class="form-header">
+                <h2>Iniciar Sesión</h2>
+                <p>Bienvenido de vuelta, nos alegra verte.</p>
+            </header>
+
+            <div class="input-box">
+                <span class="icon"><i class='bx bxs-envelope'></i></span>
+                <input type="email" id="loginEmail" placeholder=" " required>
+                <label>Correo electrónico</label>
+            </div>
+
+            <div class="input-box">
+                <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                <input type="password" id="loginPassword" placeholder=" " required>
+                <label>Contraseña</label>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Recordarme</label>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+
+            <button type="submit" class="btn primary">Entrar</button>
+
+            <p class="message" id="loginMessage"></p>
+
+            <!-- Separador + Login social -->
+            <div class="divider"><span>o continúa con</span></div>
+
+            <div class="social-login">
+                <button type="button" class="social-btn google"   data-provider="Google"   title="Continuar con Google">
+                    <i class='bx bxl-google'></i>
+                </button>
+                <button type="button" class="social-btn facebook" data-provider="Facebook" title="Continuar con Facebook">
+                    <i class='bx bxl-facebook'></i>
+                </button>
+                <button type="button" class="social-btn linkedin" data-provider="LinkedIn" title="Continuar con LinkedIn">
+                    <i class='bx bxl-linkedin'></i>
+                </button>
+                <button type="button" class="social-btn github"   data-provider="GitHub"   title="Continuar con GitHub">
+                    <i class='bx bxl-github'></i>
+                </button>
+            </div>
+
+            <p class="switch-text">
+                ¿No tienes cuenta?
+                <a href="#" class="register-link">Crear una ahora</a>
+            </p>
+        </form>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         FORMULARIO: REGISTRO
+    ════════════════════════════════════════════ -->
+    <div class="form-box register">
+        <form id="registerForm" novalidate>
+            <header class="form-header">
+                <h2>Crear Cuenta</h2>
+                <p>Únete en menos de un minuto.</p>
+            </header>
+
+            <div class="input-box">
+                <span class="icon"><i class='bx bxs-user'></i></span>
+                <input type="text" id="regName" placeholder=" " required>
+                <label>Nombre completo</label>
+            </div>
+
+            <div class="input-box">
+                <span class="icon"><i class='bx bxs-envelope'></i></span>
+                <input type="email" id="regEmail" placeholder=" " required>
+                <label>Correo electrónico</label>
+            </div>
+
+            <div class="input-box">
+                <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                <input type="password" id="regPassword" placeholder=" " required>
+                <label>Contraseña (mín. 6)</label>
+            </div>
+
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox" id="regTerms">
+                    Acepto los <a href="#">términos y condiciones</a>
+                </label>
+            </div>
+
+            <button type="submit" class="btn primary">Registrarme</button>
+
+            <p class="message" id="registerMessage"></p>
+
+            <div class="divider"><span>o regístrate con</span></div>
+
+            <div class="social-login">
+                <button type="button" class="social-btn google"   data-provider="Google"   title="Registrarse con Google">
+                    <i class='bx bxl-google'></i>
+                </button>
+                <button type="button" class="social-btn facebook" data-provider="Facebook" title="Registrarse con Facebook">
+                    <i class='bx bxl-facebook'></i>
+                </button>
+                <button type="button" class="social-btn linkedin" data-provider="LinkedIn" title="Registrarse con LinkedIn">
+                    <i class='bx bxl-linkedin'></i>
+                </button>
+                <button type="button" class="social-btn github"   data-provider="GitHub"   title="Registrarse con GitHub">
+                    <i class='bx bxl-github'></i>
+                </button>
+            </div>
+
+            <p class="switch-text">
+                ¿Ya tienes cuenta?
+                <a href="#" class="login-link">Inicia sesión</a>
+            </p>
+        </form>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         PANEL AZUL DESLIZANTE
+    ════════════════════════════════════════════ -->
+    <div class="blue-panel">
+
+        <div class="panel-content panel-welcome">
+            <h1>¡Hola, Bienvenido!</h1>
+            <p>¿Aún no tienes una cuenta? Regístrate y comienza ahora.</p>
+            <button type="button" class="btn ghost register-btn">Registrarme</button>
+        </div>
+
+        <div class="panel-content panel-return">
+            <h1>¡Bienvenido de nuevo!</h1>
+            <p>¿Ya tienes una cuenta? Inicia sesión para continuar.</p>
+            <button type="button" class="btn ghost login-btn">Iniciar Sesión</button>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
